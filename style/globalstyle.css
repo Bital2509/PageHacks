@@ -1,5 +1,10 @@
+@font-face {
+  font-family: "Play-Bold";
+  src: url("../fonts/Play-Bold.ttf");
+}
 * {
   box-sizing: border-box;
+  font-family: Play-Bold;
 }
 
 html, body {
@@ -193,38 +198,6 @@ header {
   grid-column-gap: 24px;
 }
 
-.card {
-  padding: 15px;
-  grid-column-end: span 12;
-  display: flex;
-  margin: 12px 0;
-  color: white;
-  background: rgba(66, 66, 66, 0.83);
-  text-decoration: none;
-  transition: all 0.5s cubic-bezier(0.19, 1, 0.22, 1);
-  box-shadow: 0 0 0 #ed1c24;
-}
-.card img {
-  width: 50%;
-}
-.card .card-info {
-  margin-left: 10px;
-  padding: 25px;
-  box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.5);
-}
-.card .card-info .title {
-  font-size: 35px;
-}
-.card .card-info .text {
-  margin-top: 12px;
-  font-size: 20px;
-}
-
-.card:hover {
-  box-shadow: -10px 10px 1px #ed1c24;
-  transition: all 0.5s cubic-bezier(0.19, 1, 0.22, 1);
-}
-
 @media (max-width: 990px) {
   .container {
     padding: 70px 48px 20px 48px;
@@ -234,34 +207,11 @@ header {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
   }
-
-  .card {
-    flex-direction: column;
-  }
-  .card img {
-    width: 100%;
-  }
-  .card .card-info {
-    margin: 0;
-  }
 }
 @media (max-width: 1125px) {
   .container {
     padding: 70px 48px 0 48px;
     grid-column-gap: 12px;
-  }
-
-  .card {
-    grid-column-end: span 6;
-    display: flex;
-    flex-direction: column;
-  }
-  .card img {
-    width: 100%;
-  }
-  .card .card-info {
-    margin-left: 0;
-    margin-top: 10px;
   }
 }
 
