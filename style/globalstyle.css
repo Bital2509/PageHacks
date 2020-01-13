@@ -58,7 +58,7 @@ header {
   align-items: center;
   min-width: 35%;
   max-width: 45%;
-  height: -webkit-fill-available;
+  height: auto;
 }
 .header__menu .menu-list a {
   padding: 5px;
