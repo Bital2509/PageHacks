@@ -77,6 +77,8 @@
 
 @media (max-width: 990px) {
   .downloads {
+    grid-column: 1;
+
     .title {
       margin-bottom: 0;
     }
@@ -146,13 +148,17 @@
 }
 
 @media (max-width: 990px) {
+  .carousel {
+    margin-top: 24px;
+    grid-column: 1;
+  }
   .section-title {
-    grid-column-end: span 12;
+    grid-column: 1;
   }
   .carousel {
     border: 2px black solid;
   }
   .buttonCarousel {
-    grid-column: 1/ span 12;
+    grid-column: 1;
   }
 }

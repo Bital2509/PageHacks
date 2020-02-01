@@ -40,19 +40,6 @@
   transition: all 0.5s cubic-bezier(0.19, 1, 0.22, 1);
 }
 
-@media (max-width: 990px) {
-  .card {
-    flex-direction: column;
-
-    img {
-      width: 100%;
-    }
-
-    .card-info {
-      margin: 0;
-    }
-  }
-}
 
 @media (max-width: 1125px) {
   .card {
@@ -71,12 +58,30 @@
   }
 }
 
+@media (max-width: 990px) {
+  .card {
+    grid-column: 1;
+    grid-column-end: span 1;
+    flex-direction: column;
+
+    img {
+      width: 100%;
+    }
+
+    .card-info {
+      margin: 0;
+    }
+  }
+}
+
 .card_disable {
   display: none;
 }
-.card_active{
+
+.card_active {
   background: #ed1c24;
 }
+
 .filter {
   grid-column-end: span 12;
   display: flex;
@@ -90,5 +95,15 @@
     padding: 15px;
     font-size: 20px;
     font-family: Play-Bold;
+  }
+}
+
+@media (max-width: 990px) {
+  .filter {
+    grid-column: 1;
+    flex-direction: column;
+    button{
+      margin: 12px 12px;
+    }
   }
 }
