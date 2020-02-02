@@ -1,0 +1,155 @@
+* {
+  text-decoration: none;
+  color: white;
+}
+
+.title {
+  font-size: 55px;
+  width: 100%;
+  text-align: center;
+}
+
+.exit {
+  margin-left: 48px;
+  display: inline-flex;
+  align-items: center;
+  color: white;
+  transition: all 0.5s cubic-bezier(0.19, 1, 0.22, 1);
+  font-size: 45px;
+}
+.exit img {
+  width: 100px;
+}
+
+.exit:hover {
+  box-shadow: -5px 10px 0 white;
+  color: #ed1c24;
+  transition: all 0.5s cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+@media (max-width: 990px) {
+  .exit {
+    width: 100%;
+    justify-content: center;
+    margin-left: 0;
+    margin-top: 100px;
+  }
+
+  .container {
+    padding: 0 48px 20px 48px;
+  }
+}
+.downloads {
+  grid-column-end: span 12;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.downloads .title {
+  font-size: 35px;
+  margin-bottom: 12px;
+}
+.downloads .link {
+  display: flex;
+  align-items: center;
+}
+.downloads .link a {
+  margin: 12px;
+  background: #424242;
+  border-radius: 50px;
+  padding: 30px;
+  font-size: 25px;
+  transition: all 0.5s cubic-bezier(0.19, 1, 0.22, 1);
+  text-align: center;
+}
+.downloads .link a:hover {
+  color: #ed1c24;
+  box-shadow: inset 0 0 50px rgba(0, 0, 0, 0.51);
+  transition: all 0.5s cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+@media (max-width: 990px) {
+  .downloads {
+    grid-column: 1;
+  }
+  .downloads .title {
+    margin-bottom: 0;
+  }
+  .downloads .link {
+    flex-direction: column;
+  }
+  .downloads .link a {
+    padding: 15px;
+  }
+}
+.carousel {
+  margin-top: 24px;
+  grid-column-end: span 12;
+  border: 15px black solid;
+  overflow: hidden;
+}
+.carousel .polosa {
+  display: flex;
+  position: relative;
+  left: 0;
+  transition: all ease 1s;
+}
+.carousel .polosa img {
+  width: 100%;
+  float: left;
+}
+.carousel .polosa::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.buttonCarousel {
+  grid-column: 9/span 4;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 100px;
+}
+.buttonCarousel img {
+  max-width: 100%;
+  height: 100%;
+}
+
+.section-title {
+  grid-column-end: span 6;
+  font-size: 35px;
+}
+
+.text {
+  grid-column-end: span 12;
+  font-size: 20px;
+}
+
+.subtitle {
+  grid-column-end: span 12;
+  text-align: center;
+  font-size: 25px;
+}
+
+@media (max-width: 990px) {
+  .carousel {
+    margin-top: 24px;
+    grid-column: 1;
+  }
+
+  .section-title {
+    grid-column: 1;
+  }
+
+  .carousel {
+    border: 2px black solid;
+  }
+
+  .buttonCarousel {
+    grid-column: 1;
+  }
+}
+
+/*# sourceMappingURL=index.css.map */
