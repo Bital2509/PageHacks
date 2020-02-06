@@ -1,3 +1,24 @@
-
+.code {
+  position: relative;
+  background: #424242;
+  color: white;
+  padding: 15px;
+  grid-column: 4/span 7;
+  border: 5px #2e2e2e solid;
+  display: flex;
+  margin: 24px 0;
+  justify-content: center;
+}
+.code span {
+  position: absolute;
+  top: -15px;
+  left: 15px;
+}
+.code pre code span {
+  position: relative;
+  top: 0;
+  left: 0;
+  color: red;
+}
 
 /*# sourceMappingURL=index.css.map */

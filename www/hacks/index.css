@@ -5,7 +5,7 @@
 }
 
 .card {
-  padding: 15px;
+  padding: 15px 15px 30px 15px;
   grid-column-end: span 12;
   display: flex;
   margin: 12px 0;
@@ -14,6 +14,7 @@
   text-decoration: none;
   transition: all 0.5s cubic-bezier(0.19, 1, 0.22, 1);
   box-shadow: 0 0 0 #ed1c24;
+  position: relative;
 }
 .card img {
   width: 50%;
@@ -29,6 +30,11 @@
 .card .card-info .text {
   margin-top: 12px;
   font-size: 20px;
+}
+.card .time {
+  bottom: 5px;
+  right: 15px;
+  position: absolute;
 }
 
 .card:hover {
@@ -69,6 +75,7 @@
 
 .card_active {
   background: #ed1c24;
+  transition: all 0.5s cubic-bezier(0.19, 1, 0.22, 1);
 }
 
 .filter {
@@ -77,6 +84,7 @@
   justify-content: center;
 }
 .filter button {
+  transition: all 0.5s cubic-bezier(0.19, 1, 0.22, 1);
   outline: none;
   border: 0;
   border-radius: 50px;
