@@ -96,6 +96,7 @@
   transition: all ease 1s;
 }
 .carousel .polosa img {
+  flex: 0 0 100%;
   width: 100%;
   float: left;
 }
